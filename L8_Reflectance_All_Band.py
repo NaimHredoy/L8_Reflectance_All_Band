@@ -30,7 +30,7 @@ refl_init1= mp * image
 refl_init2= refl_init1+ap
 solar_elevation= math.sin(62.39412056*(math.pi/180))    #in this case the value of sun elevation varies in different satellite images.
                                                         #so, you have to check it from the metadata file (.MTL) and update it
-                                                        #bsin() function will return the value in degree. if you want it in radian then erase - (math.pi/180)
+                                                        #sin() function will return the value in degree. if you want it in radian then erase - (math.pi/180)
 reflectance= refl_init2/solar_elevation
 
 #saving the output
